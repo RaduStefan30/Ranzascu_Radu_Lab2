@@ -90,5 +90,15 @@ DoughnutMachine.DoughnutCompleteDelegate(DoughnutCompleteHandler);
         {
 
         }
+
+        private void txtGlazedRaised_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txtVanillaFilled_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
