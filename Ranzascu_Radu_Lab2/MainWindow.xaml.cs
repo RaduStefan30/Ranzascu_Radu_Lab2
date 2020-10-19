@@ -105,14 +105,6 @@ DoughnutMachine.DoughnutCompleteDelegate(DoughnutCompleteHandler);
         {
             this.Close();
         }
-        private void txtQuantity_KeyPress(object sender, KeyEventArgs e)
-        {
-            if (!(e.Key >= Key.D0 && e.Key <= Key.D9))
-            {
-                MessageBox.Show("Numai cifre se pot introduce!", "Input Error", MessageBoxButton.OK,
-               MessageBoxImage.Error);
-            }
-        }
 
         private void txtChocolateFilled_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -132,6 +124,15 @@ DoughnutMachine.DoughnutCompleteDelegate(DoughnutCompleteHandler);
         private void txtVanillaFilled_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void txtQuantity_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (!(e.Key >= Key.D0 && e.Key <= Key.D9))
+            {
+                MessageBox.Show("Numai cifre se pot introduce!", "Input Error", MessageBoxButton.OK,
+               MessageBoxImage.Error);
+            }
         }
     }
 }
