@@ -1,7 +1,7 @@
 ﻿<Application x:Class="Ranzascu_Radu_Lab2.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Laborator_2"
+             xmlns:local="clr-namespace:Ranzascu_Radu_Lab2"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
