@@ -19,19 +19,19 @@
         <GroupBox x:Name="gbRaise" Header="Raised" FontWeight="Bold" Margin="28,122,456,167" Grid.Column="1">
             <Canvas Height="119">
                 <Label x:Name="lblGlazedRaised" Content="Glazed" Grid.Column="1" Canvas.Left="10" Canvas.Top="70" Width="120" Height="30"/>
-                <TextBox x:Name="txtGlazedRaised" Text="0" TextWrapping="Wrap" IsReadOnly="True" TextChanged="txtGlazedRaised_TextChanged" Grid.Column="1" Canvas.Left="180" Canvas.Top="25" Height="30" Width="60"/>
+                <TextBox x:Name="txtGlazedRaised" TextWrapping="Wrap" IsReadOnly="True" TextChanged="txtGlazedRaised_TextChanged" Grid.Column="1" Canvas.Left="180" Canvas.Top="25" Height="30" Width="60"/>
                 <Label x:Name="lblSugarRaised" Content="Sugar" Grid.Column="1" Canvas.Left="10" Canvas.Top="25" Width="120" Height="30"/>
-                <TextBox x:Name="txtSugarRaised" Text="0" TextWrapping="Wrap" IsReadOnly="True" Grid.Column="1" Canvas.Left="180" Canvas.Top="70" Height="30" Width="60"/>
+                <TextBox x:Name="txtSugarRaised" TextWrapping="Wrap" IsReadOnly="True" Grid.Column="1" Canvas.Left="180" Canvas.Top="70" Height="30" Width="60"/>
             </Canvas>
         </GroupBox>
         <GroupBox x:Name="gbFilled" Header="Filled" FontWeight="Bold" Margin="405,123,70,167" Grid.Column="1">
             <Canvas Margin="0,-14,-2,0" Height="126" VerticalAlignment="Top">
                 <Label x:Name="lblLemonFilled" Content="Lemon" Grid.Column="1" Canvas.Left="19" Canvas.Top="15" Height="30" Width="60"/>
-                <TextBox x:Name="txtLemonFilled" Text="0" TextWrapping="Wrap" IsReadOnly="True" Grid.Column="1" Canvas.Left="181" Canvas.Top="15" Width="60" Height="30"/>
+                <TextBox x:Name="txtLemonFilled" TextWrapping="Wrap" IsReadOnly="True" Grid.Column="1" Canvas.Left="181" Canvas.Top="15" Width="60" Height="30"/>
                 <Label x:Name="lblChocolateFilled" Content="Chocolate" Grid.Column="1" Canvas.Left="19" Canvas.Top="51" Height="30" Width="70"/>
-                <TextBox x:Name="txtChocolateFilled" Text="0" TextWrapping="Wrap" IsReadOnly="True" TextChanged="txtChocolateFilled_TextChanged" Grid.Column="1" Canvas.Left="181" Canvas.Top="51" Width="60" Height="30"/>
+                <TextBox x:Name="txtChocolateFilled" TextWrapping="Wrap" IsReadOnly="True" TextChanged="txtChocolateFilled_TextChanged" Grid.Column="1" Canvas.Left="181" Canvas.Top="51" Width="60" Height="30"/>
                 <Label x:Name="lblVanillaFilled" Content="Vanilla" Grid.Column="1" Canvas.Left="19" Canvas.Top="89" Height="30" Width="60"/>
-                <TextBox x:Name="txtVanillaFilled" Text="0" TextWrapping="Wrap" IsReadOnly="True" Grid.Column="1" Canvas.Left="181" Canvas.Top="89" Width="60" Height="30" TextChanged="txtVanillaFilled_TextChanged"/>
+                <TextBox x:Name="txtVanillaFilled" TextWrapping="Wrap" IsReadOnly="True" Grid.Column="1" Canvas.Left="181" Canvas.Top="89" Width="60" Height="30" TextChanged="txtVanillaFilled_TextChanged"/>
             </Canvas>
         </GroupBox>
 
@@ -76,7 +76,14 @@ Click="glazedToolStripMenuItem_Click" IsCheckable="True"/>
                         <MenuItem x:Name="sugarToolStripMenuItem" Header="Sugar"
 IsCheckable="True" Click="sugarToolStripMenuItem_Click"/>
                     </MenuItem>
-                    <MenuItem Header="Filled"/>
+                    <MenuItem Header="Filled">
+                    <MenuItem x:Name="lemonToolStripMenuItem" Header="Lemon"
+Click="lemonToolStripMenuItem_Click" IsCheckable="True"/>
+                    <MenuItem x:Name="chocolateToolStripMenuItem" Header="Chocolate"
+Click="chocolateToolStripMenuItem_Click" IsCheckable="True"/>
+                    <MenuItem x:Name="vanillaToolStripMenuItem" Header="Vanilla"
+Click="vanillaToolStripMenuItem_Click" IsCheckable="True"/>
+                </MenuItem>
                 </MenuItem>
                 <MenuItem x:Name="mnuStop" Header="Stop"/>
             </MenuItem>
